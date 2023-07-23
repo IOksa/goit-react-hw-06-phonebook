@@ -52,7 +52,11 @@ const ContactForm = () => {
           toast.error(`${name} is already in contacts`);
         }
         else{
-          dispatch(addContact(name, number));
+          const newContact={
+            name:name,
+            number:number,
+          }
+          dispatch(addContact(newContact));
         }
        
     

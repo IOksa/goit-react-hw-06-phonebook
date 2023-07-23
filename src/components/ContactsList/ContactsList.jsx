@@ -10,7 +10,7 @@ const ContactsList = ()=>{
 
     const getVisibleContacts = () => {
       const normalizedFilter = stateFilter.toLowerCase();
-  
+
       return stateContacts.filter(contact =>
         contact.name.toLowerCase().includes(normalizedFilter),
       );
